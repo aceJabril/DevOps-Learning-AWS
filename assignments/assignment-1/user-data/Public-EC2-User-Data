@@ -1,0 +1,9 @@
+This is the public user-data from my local terminal which i SSHed into
+
+yum update -y
+yum install -y httpd
+
+systemctl start httpd
+systemctl enable httpd 
+
+echo "<h1>Hello Jabril this is the public EC2v1 from $(hostname -f)</h1>" > /var/www/html/index.html
