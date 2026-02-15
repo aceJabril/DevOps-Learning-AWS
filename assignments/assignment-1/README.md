@@ -19,6 +19,10 @@ This project implements:
 - **Private EC2 Instance**  
 - Secure Security Group configuration  
 
+See the architecture diagram in:
+[Architecture](./architecture)
+
+
 **Key Architecture Principles:**
 
 - Public resources are internet-accessible  
