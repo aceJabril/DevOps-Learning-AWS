@@ -1,0 +1,40 @@
+import json
+import boto3
+import uuid
+import time
+
+dynamodb = boto3.resource('dynamodb')
+table = dynamodb.Table('students')
+
+def lambda_handler(event, context):
+    # Handle GET request
+    if event.get("httpMethod") == "GET":
+        response = table.scan()
+        return {
+            'statusCode': 200,
+            'body': json.dumps(response['Items'])
+        }
+
+    # Handle POST request
+    if event.get("httpMethod") == "POST":
+        payload = event.get('body')
+        if payload:
+            payload = json.loads(payload)
+
+        student_id = str(uuid.uuid4())
+        timestamp = int(time.time())
+
+        table.put_item(Item={
+            'id': student_id,
+            'timestamp': timestamp,
+            'payload': payload
+        })
+
+        response = {
+            "message": "Student stored successfully",
+            "id": student_id
+        }
+        return {
+            'statusCode': 200,
+            'body': json.dumps(response)
+        }
