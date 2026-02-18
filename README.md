@@ -38,13 +38,13 @@ devops-aws-learning/
 │   ├── README.md
 │   ├── architecture/
 │   ├── screenshots/
-│   └── user-data/
+│   └── website-data/
 │
 ├── assignment-4/
 │   ├── README.md
 │   ├── architecture/
 │   ├── screenshots/
-│   └── user-data/
+│   └── lambda-code-used/
 │
 └── README.md
 ```
