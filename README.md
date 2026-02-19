@@ -47,6 +47,11 @@ devops-aws-learning/
 │   └── lambda-code-used/
 │
 └── README.md
+
+
+The ssignments can be viewed here [assignments](./assignments)
+
+
 ```
 
 ### Folder Breakdown
@@ -57,7 +62,8 @@ Each assignment directory contains:
 * **architecture/** – Architecture diagrams and design documentation
 * **screenshots/** – Deployment proof and validation evidence
 * **user-data/** – EC2 user data scripts or configuration files used during provisioning
-
+* **lambda-code-used/** - This is the code used when setting up lambda
+* **website-data/** - This is the code and the data that was used and shown
 This structure ensures clarity, consistency, and proper documentation for every project.
 
 ---
