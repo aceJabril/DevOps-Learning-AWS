@@ -14,7 +14,7 @@ All implementations follow best practices for:
 * Observability
 
 
-The assignments can be viewed here [assignments](./assignments)
+The assignments can be viewed here: [assignments](./assignments)
 
 
 ---
