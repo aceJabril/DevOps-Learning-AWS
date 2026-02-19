@@ -13,6 +13,10 @@ All implementations follow best practices for:
 * High Availability
 * Observability
 
+
+The assignments can be viewed here [assignments](./assignments)
+
+
 ---
 
 ## Repository Structure
@@ -47,10 +51,6 @@ devops-aws-learning/
 │   └── lambda-code-used/
 │
 └── README.md
-
-
-The ssignments can be viewed here [assignments](./assignments)
-
 
 ```
 
